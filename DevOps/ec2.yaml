@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A sample CloudFormation template to create an EC2.
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-00ca32bbc84273381
+      InstanceType: t2.micro
+      SubnetId: subnet-0014ae11495ed4c62
+      Tags:
+        - Key: Name
+          Value: ADE
